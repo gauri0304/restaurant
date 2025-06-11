@@ -1,0 +1,70 @@
+/* Base Styles */
+body {
+  background-color: #000 !important;
+  font-family: "Asap", sans-serif;
+  color: #ffffff;
+  margin: 10px;
+  font-size: 16px;
+}
+
+/* Gallery Section Styling */
+#gallery {
+  background: #111; /* Dark background for contrast */
+  color: #fff;
+  padding: 4rem 0;
+}
+
+#gallery h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+#gallery p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out both;
+}
+
+/* Image Zoom Effect */
+.thumb {
+  margin-bottom: 1.5rem;
+}
+
+.thumb img.zoom {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 8px;
+}
+
+.thumb img.zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.5); /* #ffc107 glow */
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  #gallery h1 {
+    font-size: 2.2rem;
+  }
+
+  #gallery p {
+    font-size: 1rem;
+  }
+}
+
+/* Entrance Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

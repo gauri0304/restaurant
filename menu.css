@@ -1,0 +1,404 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+}
+
+/* Navigation Bar Styling */
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+/* Hover effect */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #000;
+  background-color: #ffc107;
+  /* Bootstrap's warning color */
+  text-decoration: none;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffc107 !important;
+}
+
+/* Reservation button */
+.btn-outline-warning {
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+/* == Modal Content Styling == */
+#bookingModal .modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Header */
+#bookingModal .modal-header {
+  background-color: #212529;
+  /* dark */
+  color: white;
+  border-bottom: none;
+}
+
+/* Modal Title */
+#bookingModal .modal-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* Close Button */
+#bookingModal .close {
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+/* Modal Body */
+#bookingModal .modal-body {
+  padding: 1.5rem 2rem;
+  background-color: #f8f9fa;
+}
+
+/* Form Inputs */
+#bookingModal .form-control,
+#bookingModal .form-select {
+  border-radius: 10px;
+  padding: 8px 10px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#bookingModal .form-control:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+/* Labels */
+#bookingModal label {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* Radio Buttons */
+#bookingModal .form-check-label {
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+/* Modal Footer */
+#bookingModal .modal-footer {
+  background-color: #f1f1f1;
+  border-top: none;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+/* Submit Button */
+#bookingModal .btn-warning {
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#bookingModal .btn-warning:hover {
+  background-color: #e0a800;
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+/* Starter Section */
+.card.text-bg-dark {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.card-img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+  filter: brightness(50%);
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  height: 100%;
+}
+
+/* Entrance Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  animation: fadeInUp 0.8s ease-out both;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.card-title:hover {
+  transform: scale(1.08);
+  color: #ffcc00;
+  opacity: 0.95;
+}
+
+/* Dish List Section Container */
+.row.row-cols-2 {
+  margin-top: 2rem;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Individual Dish Block */
+.row.g-4.g-md-5 {
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.7s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* Dish Row Layout */
+.d-flex.align-items-center.justify-content-between {
+  padding: 1rem 0;
+  border-bottom: 1px dashed #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.d-flex.align-items-center.justify-content-between:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Dish Name */
+.d-flex h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.d-flex h2:hover {
+  color: #ff9900;
+  transform: scale(1.05);
+}
+
+/* Horizontal Line */
+.d-flex hr {
+  margin: 0 1rem;
+  border-top: 1px dashed #aaa;
+  transition: border-color 0.3s ease;
+}
+
+.d-flex:hover hr {
+  border-color: #ff9900;
+}
+
+/* Price Styling */
+h2.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+h2.price .bi-currency-rupee {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #000;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effects for Price */
+.price:hover,
+.price:hover .bi-currency-rupee {
+  color: #ff9900;
+}
+
+.footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 2rem 1rem;
+  margin: 0;
+}
+
+.footer .float-right {
+  float: right;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.footer .float-right a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer .float-right a:hover {
+  color: #ff9800;
+  text-decoration: underline;
+}
+
+.footer .nav {
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer .nav-link {
+  color: #aaa;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer .nav-link:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.footer p {
+  text-align: center;
+  color: #888;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Your existing CSS stays unchanged above... */
+
+/* ================= Responsive Styles ================= */
+
+@media (max-width: 992px) {
+  /* Navbar */
+  .navbar-dark .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-outline-warning {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Card image */
+  .card-img {
+    height: 300px;
+  }
+
+  .card-img-overlay {
+    padding: 2rem;
+  }
+
+  .card-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  /* Dish items */
+  .d-flex.align-items-center.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .d-flex h2,
+  h2.price {
+    font-size: 1.3rem;
+  }
+
+  .d-flex hr {
+    display: none;
+  }
+
+  /* Footer */
+  .footer .float-right {
+    float: none;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .footer .nav {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Card image */
+  .card-img {
+    height: 220px;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  /* Dish prices and titles */
+  .d-flex h2,
+  h2.price {
+    font-size: 1.15rem;
+  }
+
+  /* Modal adjustments */
+  #bookingModal .modal-body {
+    padding: 1rem;
+  }
+
+  #bookingModal .modal-footer {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Footer */
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .footer .nav-link {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
