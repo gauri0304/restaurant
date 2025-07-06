@@ -49,3 +49,10 @@ spine--dine-restaurant/ <br>
 ├── /images <br>
 └── README.md 
 
+--- 
+
+🤝 Acknowledgments
+
+Design inspired by modern restaurant themes.
+
+Icons and fonts from Font Awesome and Google Fonts.
