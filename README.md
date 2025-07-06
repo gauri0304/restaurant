@@ -33,13 +33,13 @@ Welcome to **Spine & Dine**, a modern and elegant restaurant website built to sh
 
 ---
 
-Navigate into the project folder:
+2. Navigate into the project folder:
 
 cd spine--dine-restaurant
 
 ---
 
-📁 Folder Structure
+3. 📁 Folder Structure
 
 spine--dine-restaurant/ <br>
 │ <br>
