@@ -31,3 +31,21 @@ Welcome to **Spine & Dine**, a modern and elegant restaurant website built to sh
    ```bash
    git clone https://github.com/gauri0304/spine--dine-restaurant.git
 
+---
+
+Navigate into the project folder:
+
+cd spine--dine-restaurant
+
+---
+
+📁 Folder Structure
+
+spine--dine-restaurant/ <br>
+│ <br>
+├── index.html <br>
+├── style.css <br>
+├── script.js <br>
+├── /images <br>
+└── README.md 
+
