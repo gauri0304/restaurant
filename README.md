@@ -27,7 +27,7 @@ Welcome to **Spine & Dine**, a modern and elegant restaurant website built to sh
 
 ## 🚀 How to Run Locally
 
-Clone this repository:
+1. Clone this repository:
    ```bash
    git clone https://github.com/gauri0304/spine--dine-restaurant.git
 
